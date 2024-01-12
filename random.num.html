@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+  
+  </head>
+  <body>
+    <button onclick="generateRandomNumber()">Generer tilfeldig tall</button><p id="random-number"></p>
+
+    <script>
+        function generateRandomNumber() {
+          var randomNumber = Math.floor(Math.random() * 70) + 1;
+          document.getElementById("random-number").innerText = randomNumber;
+        }
+      </script>
+
+
+  </body>
+</html>

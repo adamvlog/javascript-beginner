@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+// .push
+var myArray = [1, 2, 3];
+myArray.push(4, 5, 4, 8, 3, 9, 12, 45);
+console.log(myArray); // Output: [1, 2, 3, 4, 5]
+
+// .forEach
+myArray.forEach(function(element) {
+  console.log(element);
+});
+
+
+ //.map() oppretter en ny kopi av et array ved å kjøre en funksjon på hvert element i
+var multipliedArray = myArray.map(function(element) {
+  return element * 2;
+});
+console.log(multipliedArray); // Output: [2, 4, 6, 8, 10]
+    </script>
+</body>
+</html>
